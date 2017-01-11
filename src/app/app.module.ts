@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { RouterModule, Routes } from '@angular/router';
+
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header.component';
@@ -13,12 +13,7 @@ import { RecipeDetailsComponent } from './recipec/recipe-details/recipe-details.
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { SelectionItemDirective } from './ui-directives/selection-item.directive';
 import {RecipesService} from "./recipec/recipes.service";
-
-
-const appRoutes: Routes = [
-  { path: 'recipes', component: RecipecComponent },
-  { path: 'shopping-list',      component: ShoppingListComponent },
-];
+import {routing} from "./app.routing";
 
 @NgModule({
   declarations: [
@@ -35,7 +30,7 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes)
+    routing
   ],
   providers: [RecipesService],
   bootstrap: [AppComponent]
