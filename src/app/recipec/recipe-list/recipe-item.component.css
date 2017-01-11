@@ -1,0 +1,13 @@
+.item > .recipe-img{
+  width: 17%;
+  display: inline-block;
+  margin: 1em;
+}
+.item > .content{
+  display: inline-block;
+}
+.item-title{
+  display: inline-block;
+  font-size: 1.25em;
+  font-weight: bold;
+}

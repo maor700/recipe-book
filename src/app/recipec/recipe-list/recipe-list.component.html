@@ -1,0 +1,3 @@
+<div class="ui middle aligned large selection list">
+  <div class="item ui segment inverted" rb-recipe-item *ngFor="let recipe of recipes; let i = index" #item [recipe]="recipe" [recipeId] = "i"  [ngClass]="{red:  SelectedId == i}" (click)="onSelected(recipe, i);item.isSelected=true"></div>
+ </div>

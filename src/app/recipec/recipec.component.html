@@ -1,0 +1,16 @@
+<div class="ui grid basic segment">
+  <div class="five wide column">
+    <div class="ui segment red">
+      <div class="ui header "> Recipe List</div>
+      <div class="ui divider"></div>
+      <rb-recipe-list (recipeSelected)="selectedRecipe = $event"></rb-recipe-list>
+    </div>
+  </div>
+  <div class="eleven wide column">
+    <div class="ui segment red ">
+      <div class="ui header "> Recipe Details</div>
+      <div class="ui divider"></div>
+      <rb-recipe-details [selectedRecipe]="selectedRecipe"></rb-recipe-details>
+    </div>
+  </div>
+</div>

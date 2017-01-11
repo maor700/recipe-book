@@ -1,0 +1,11 @@
+<div class="details-btns-panel">
+  <div class="ui button red inverted">To Shopping List</div>
+  <div class="ui button red">Delete</div>
+  <div class="ui button red">Edit</div>
+</div>
+<div class="ui divider"></div>
+<div class="details content">
+<div class="ui header large">{{selectedRecipe?.name}}</div>
+<div class="ui paragraph">{{selectedRecipe?.description}}</div>
+  <img class="ui image large right" [src]="selectedRecipe?.imagePath">
+</div>
