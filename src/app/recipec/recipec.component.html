@@ -3,14 +3,15 @@
     <div class="ui segment red">
       <div class="ui header "> Recipe List</div>
       <div class="ui divider"></div>
-      <rb-recipe-list (recipeSelected)="selectedRecipe = $event"></rb-recipe-list>
+      <rb-recipe-list [selectedRecipe]="selectedRecipe" [recipes]="recipes" [recipeIndex]="recipeIndex"></rb-recipe-list>
     </div>
   </div>
   <div class="eleven wide column">
     <div class="ui segment red ">
       <div class="ui header "> Recipe Details</div>
       <div class="ui divider"></div>
-      <rb-recipe-details [selectedRecipe]="selectedRecipe"></rb-recipe-details>
+      <!--<rb-recipe-details [selectedRecipe]="selectedRecipe"></rb-recipe-details>-->
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>

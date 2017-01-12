@@ -8,9 +8,9 @@ import {Recipe} from '../recipe';
 export class RecipeItemComponent implements OnInit {
   @Input() recipe: Recipe;
   @Input() recipeId: Number;
-  constructor() {
+  @Input() selectedRecipe: Recipe;
 
-  }
+  constructor() {}
 
   ngOnInit() {
   }

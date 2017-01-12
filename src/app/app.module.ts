@@ -14,6 +14,8 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { SelectionItemDirective } from './ui-directives/selection-item.directive';
 import {RecipesService} from "./recipec/recipes.service";
 import {routing} from "./app.routing";
+import { RecipeStartComponent } from './recipec/recipe-start.component';
+import { RecipeEditComponent } from './recipec/recipe-edit/recipe-edit.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import {routing} from "./app.routing";
     RecipeItemComponent,
     RecipeDetailsComponent,
     ShoppingListComponent,
-    SelectionItemDirective
+    SelectionItemDirective,
+    RecipeStartComponent,
+    RecipeEditComponent
   ],
   imports: [
     BrowserModule,
